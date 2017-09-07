@@ -12,9 +12,7 @@ public class JavaBitSet {
     int n = scanner.nextInt();
     int m = scanner.nextInt();
 
-    BitSet b1 = new BitSet(n);
-    BitSet b2 = new BitSet(n);
-    BitSet[] bitSets = {null, b1, b2};
+    BitSet[] bitSets = {null, new BitSet(n), new BitSet(n)};
 
     for (int i = 0; i < m; i++) {
       String op = scanner.next();
@@ -39,7 +37,7 @@ public class JavaBitSet {
           break;
       }
 
-      System.out.printf("%s %s\n", b1.cardinality(), b2.cardinality());
+      System.out.printf("%s %s\n", bitSets[1].cardinality(), bitSets[2].cardinality());
     }
   }
 }
