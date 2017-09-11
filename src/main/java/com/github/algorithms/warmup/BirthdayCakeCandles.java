@@ -9,7 +9,7 @@ public class BirthdayCakeCandles {
     System.out.println(birthdayCakeCandles(n.length, n));
   }
 
-  static int birthdayCakeCandles(int n, int[] candles) {
+  private static int birthdayCakeCandles(int n, int[] candles) {
     // Complete this function
     int maxHeight = 0;
     int numCandles = 0;
