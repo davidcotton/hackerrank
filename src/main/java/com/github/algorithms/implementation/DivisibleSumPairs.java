@@ -7,10 +7,7 @@ public class DivisibleSumPairs {
   private static int divisibleSumPairs(int[] ints, int k) {
     int nPairs = 0;
     for (int i = 0; i < ints.length; i++) {
-      for (int j = 1; j < ints.length; j++) {
-        if (j <= i) {
-          continue;
-        }
+      for (int j = i + 1; j < ints.length; j++) {
         if ((ints[i] + ints[j]) % k == 0) {
           nPairs++;
         }
