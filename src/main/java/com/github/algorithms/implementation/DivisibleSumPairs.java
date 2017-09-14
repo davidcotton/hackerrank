@@ -13,6 +13,7 @@ public class DivisibleSumPairs {
         }
       }
     }
+
     return nPairs;
   }
 
